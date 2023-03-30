@@ -19,6 +19,7 @@
 		9627536429D5404300692FD5 /* NameEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627536329D5404300692FD5 /* NameEditVC.swift */; };
 		9627536629D5514100692FD5 /* KVOExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627536529D5514100692FD5 /* KVOExample.swift */; };
 		9627536829D55E2000692FD5 /* ArcherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627536729D55E2000692FD5 /* ArcherVC.swift */; };
+		9627536A29D5A13B00692FD5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9627536929D5A13B00692FD5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		9627536329D5404300692FD5 /* NameEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameEditVC.swift; sourceTree = "<group>"; };
 		9627536529D5514100692FD5 /* KVOExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOExample.swift; sourceTree = "<group>"; };
 		9627536729D55E2000692FD5 /* ArcherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcherVC.swift; sourceTree = "<group>"; };
+		9627536929D5A13B00692FD5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		9627533729D52A3500692FD5 = {
 			isa = PBXGroup;
 			children = (
+				9627536929D5A13B00692FD5 /* README.md */,
 				9627534229D52A3500692FD5 /* KVC+KVO */,
 				9627534129D52A3500692FD5 /* Products */,
 			);
@@ -157,6 +160,7 @@
 			files = (
 				9627535329D52A3600692FD5 /* LaunchScreen.storyboard in Resources */,
 				9627535029D52A3600692FD5 /* Assets.xcassets in Resources */,
+				9627536A29D5A13B00692FD5 /* README.md in Resources */,
 				9627534E29D52A3500692FD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
