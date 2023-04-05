@@ -105,8 +105,8 @@ final class KVOExample: NSObject {
     
     func removeObservations() {
         // Удаление наблюдателей
-        observation.invalidate()
-        observation2.invalidate()
+        observation?.invalidate()
+        observation2?.invalidate()
         observation = nil
         observation2 = nil
     }
