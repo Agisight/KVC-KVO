@@ -26,6 +26,8 @@ final class NameEditVC: UIViewController {
     @IBOutlet private weak var firstNameTF: UITextField!
     @IBOutlet private weak var lastNameTF: UITextField!
     
+    @IBOutlet private weak var balancesSumLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,5 +52,43 @@ final class NameEditVC: UIViewController {
         // Получение значения нужной переменной через `keyPath`
         let fullname = value(forKeyPath: "person.fullName") ?? ""
         debugPrint("Full name is \(fullname)")
+    }
+    
+    // Показываем обработку массивов с помощью операторов
+    @IBAction private func testPersonsArray() {
+        debugPrint("--- Test ---")
+        let dinDjarinAccount = Account(balance: 2000)
+        let dinDjarin = Person(firstName: "Din", lastName: "Djarin", account: dinDjarinAccount)
+        
+        let groguBabyAccount = Account(balance: 0)
+        let groguBaby = Person(firstName: "Grogu", lastName: "Baby", account: groguBabyAccount)
+        
+        let soloKhanAccount = Account(balance: .random(in: 100...500))
+        let soloKhan = Person(firstName: "Solo", lastName: "Khan", account: soloKhanAccount)
+        
+        let anakinSkywalkerAccount = Account(balance: 9000)
+        let anakinSkywalker = Person(firstName: "Anakin", lastName: "Skywalker", account: anakinSkywalkerAccount)
+        
+        let leiaSkywalkerAccount = Account(balance: 5000)
+        let leiaSkywalker = Person(firstName: "Leia", lastName: "Skywalker", account: leiaSkywalkerAccount)
+        
+        let lukeSkywalkerAccount = Account(balance: 1000)
+        let lukeSkywalker = Person(firstName: "Leia", lastName: "Skywalker", account: lukeSkywalkerAccount)
+        
+        let persons = NSArray(array: [
+            dinDjarin, groguBaby, soloKhan, anakinSkywalker, leiaSkywalker, lukeSkywalker
+        ])
+        let uniqueFirstNames = persons.value(forKeyPath: "@distinctUnionOfObjects.lastName") as? [String] ?? []
+        // Только уникальные фамилии
+        debugPrint(uniqueFirstNames)
+        
+        let avgPersonsBalance = persons.value(forKeyPath: "@avg.account.balance") as? Double ?? 0
+        // Средний баланс у персон
+        debugPrint(avgPersonsBalance)
+        
+        let sumPersonsBalance = (persons.value(forKeyPath: "@sum.account.balance") as? Double ?? 0).rounded()
+        // Сумма всех балансов
+        debugPrint(sumPersonsBalance)
+        balancesSumLabel.text = "\(sumPersonsBalance)"
     }
 }

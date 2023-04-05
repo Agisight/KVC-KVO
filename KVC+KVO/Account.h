@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property double balance;
 @property NSDate* lastTransactionDate;
 
+- (instancetype)initWithBalance:(double)balance;
+
 -(void)addMoney:(double) amount;
 @end
 

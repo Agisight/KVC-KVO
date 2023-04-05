@@ -18,13 +18,21 @@
 - (instancetype)initWithfirstName:(NSString*)firstName lastName:(NSString*)lastName {
     self = [super init];
     if (self) {
-        self.firstName = firstName;
-        self.lastName = lastName;
-        
-        // Inject with init or restore from database
+        // TODO: Inject with init or restore from database
         Account *account = [[Account alloc] init];
         account.balance = 0;
         account.lastTransactionDate = NSDate.now;
+        self.account = account;
+        return [self initWithfirstName:firstName lastName:lastName account:account];
+    }
+    return self;
+}
+
+- (instancetype)initWithfirstName:(NSString*)firstName lastName:(NSString*)lastName account:(Account*)account {
+    self = [super init];
+    if (self) {
+        self.firstName = firstName;
+        self.lastName = lastName;
         self.account = account;
         
         [account addObserver:self
