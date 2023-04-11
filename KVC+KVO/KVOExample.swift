@@ -8,49 +8,6 @@
 import Foundation
 import SwiftUI
 
-@objc enum SkillLevel: Int, CaseIterable {
-    typealias RawValue = Int
-    case newbie
-    case beginner
-    case candidate
-    case master
-    case champion
-    
-    var stringValue: String {
-        switch self {
-        case .newbie:
-            return "newbie"
-        case .beginner:
-            return "beginner"
-        case .candidate:
-            return "candidate"
-        case .master:
-            return "master"
-        case .champion:
-            return "champion"
-        }
-    }
-    
-    var capitalized: String {
-        stringValue.capitalized
-    }
-}
-
-// Создание класса с наблюдаемым свойством
-final class Archer: NSObject {
-    @objc dynamic var skillLevel: Int = 0
-    
-    @objc dynamic var title: SkillLevel = .newbie {
-        didSet {
-            if title.rawValue > oldValue.rawValue {
-                debugPrint("Congratulation! You are \(title.stringValue)")
-            } else {
-                debugPrint("Ouch! You should try more, \(title.stringValue)")
-            }
-        }
-    }
-}
-
 /**
     В этом классе приводим примеры создания Swift-style наблюдателей `NSKeyValueObservation`.
  

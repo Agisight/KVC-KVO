@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960EA24E29E48038007F3186 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960EA24D29E48038007F3186 /* Archer.swift */; };
 		9627534529D52A3500692FD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627534429D52A3500692FD5 /* AppDelegate.m */; };
 		9627534829D52A3500692FD5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627534729D52A3500692FD5 /* SceneDelegate.m */; };
 		9627534B29D52A3500692FD5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627534A29D52A3500692FD5 /* ViewController.m */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960EA24D29E48038007F3186 /* Archer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archer.swift; sourceTree = "<group>"; };
 		9627534029D52A3500692FD5 /* KVC+KVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KVC+KVO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9627534329D52A3500692FD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9627534429D52A3500692FD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				9627535D29D52A7800692FD5 /* Person.m */,
 				9627534C29D52A3500692FD5 /* Main.storyboard */,
 				9627536529D5514100692FD5 /* KVOExample.swift */,
+				960EA24D29E48038007F3186 /* Archer.swift */,
 				9627536329D5404300692FD5 /* NameEditVC.swift */,
 				9627536729D55E2000692FD5 /* ArcherVC.swift */,
 				9627534F29D52A3600692FD5 /* Assets.xcassets */,
@@ -176,6 +179,7 @@
 				9627534529D52A3500692FD5 /* AppDelegate.m in Sources */,
 				9627536829D55E2000692FD5 /* ArcherVC.swift in Sources */,
 				9627535E29D52A7800692FD5 /* Person.m in Sources */,
+				960EA24E29E48038007F3186 /* Archer.swift in Sources */,
 				9627536129D5347600692FD5 /* Account.m in Sources */,
 				9627535629D52A3600692FD5 /* main.m in Sources */,
 				9627534829D52A3500692FD5 /* SceneDelegate.m in Sources */,
