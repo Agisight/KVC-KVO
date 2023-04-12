@@ -21,6 +21,7 @@
                     <connections>
                         <segue destination="Ra2-5W-RXo" kind="relationship" relationship="viewControllers" id="s4i-QG-1Gt"/>
                         <segue destination="0Cm-EI-4kb" kind="relationship" relationship="viewControllers" id="PAT-Pw-f8u"/>
+                        <segue destination="bR0-JQ-NMn" kind="relationship" relationship="viewControllers" id="0mn-eK-wl3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5v0-YR-W1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -79,7 +80,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnc-Jn-G9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1730" y="718"/>
+            <point key="canvasLocation" x="-2533" y="751"/>
+        </scene>
+        <!--Launcher-->
+        <scene sceneID="1Eb-Ro-k8w">
+            <objects>
+                <viewController title="Launcher" id="bR0-JQ-NMn" customClass="LauncherVC" customModule="KVC_KVO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5t7-ON-Jc6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ft6-NP-Gzh" userLabel="Launch Stack View">
+                                <rect key="frame" x="135" y="414.5" width="144.5" height="67.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMc-Bd-Zho">
+                                        <rect key="frame" x="0.0" y="0.0" width="144.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Launch the Rocket"/>
+                                        <connections>
+                                            <action selector="launchRocket" destination="bR0-JQ-NMn" eventType="touchUpInside" id="Llz-ef-PbA"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial state" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0t-FD-fUU">
+                                        <rect key="frame" x="31" y="47" width="82.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cnz-Y2-Hs3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ft6-NP-Gzh" firstAttribute="centerX" secondItem="5t7-ON-Jc6" secondAttribute="centerX" id="ae0-R7-pu2"/>
+                            <constraint firstItem="Ft6-NP-Gzh" firstAttribute="centerY" secondItem="5t7-ON-Jc6" secondAttribute="centerY" id="cAZ-cN-7QC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Launcher" id="qmH-on-HxT"/>
+                    <connections>
+                        <outlet property="rocketSpeedLabel" destination="i0t-FD-fUU" id="CUy-Xf-hcd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31J-r7-BfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1730" y="751"/>
         </scene>
         <!--Profile-->
         <scene sceneID="yfT-3C-RdO">
