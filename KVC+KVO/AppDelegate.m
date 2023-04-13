@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ReflectionTest.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Uncomment to test a class reflection
+    // [ReflectionTest printArcherClassInfo];
+    
     return YES;
 }
 

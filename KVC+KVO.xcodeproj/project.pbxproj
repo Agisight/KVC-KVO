@@ -21,6 +21,7 @@
 		9627536629D5514100692FD5 /* KVOExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627536529D5514100692FD5 /* KVOExample.swift */; };
 		9627536829D55E2000692FD5 /* ArcherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627536729D55E2000692FD5 /* ArcherVC.swift */; };
 		9627536A29D5A13B00692FD5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9627536929D5A13B00692FD5 /* README.md */; };
+		96D95A9929E6DA7700B8BFA1 /* ReflectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D95A9829E6DA7700B8BFA1 /* ReflectionTest.m */; };
 		96DF574D29E5696A00960BD8 /* RuntimeAddClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DF574C29E5696A00960BD8 /* RuntimeAddClass.m */; };
 		96DF574F29E5913B00960BD8 /* LauncherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF574E29E5913B00960BD8 /* LauncherVC.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,8 @@
 		9627536529D5514100692FD5 /* KVOExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVOExample.swift; sourceTree = "<group>"; };
 		9627536729D55E2000692FD5 /* ArcherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcherVC.swift; sourceTree = "<group>"; };
 		9627536929D5A13B00692FD5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96D95A9729E6DA7700B8BFA1 /* ReflectionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReflectionTest.h; sourceTree = "<group>"; };
+		96D95A9829E6DA7700B8BFA1 /* ReflectionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReflectionTest.m; sourceTree = "<group>"; };
 		96DF574B29E5696A00960BD8 /* RuntimeAddClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeAddClass.h; sourceTree = "<group>"; };
 		96DF574C29E5696A00960BD8 /* RuntimeAddClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeAddClass.m; sourceTree = "<group>"; };
 		96DF574E29E5913B00960BD8 /* LauncherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherVC.swift; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				96DF575229E59BB200960BD8 /* MethodNames.h */,
 				96DF574B29E5696A00960BD8 /* RuntimeAddClass.h */,
 				96DF574C29E5696A00960BD8 /* RuntimeAddClass.m */,
+				96D95A9729E6DA7700B8BFA1 /* ReflectionTest.h */,
+				96D95A9829E6DA7700B8BFA1 /* ReflectionTest.m */,
 				9627534F29D52A3600692FD5 /* Assets.xcassets */,
 				9627535129D52A3600692FD5 /* LaunchScreen.storyboard */,
 				9627535429D52A3600692FD5 /* Info.plist */,
@@ -192,6 +197,7 @@
 				9627535E29D52A7800692FD5 /* Person.m in Sources */,
 				960EA24E29E48038007F3186 /* Archer.swift in Sources */,
 				96DF574F29E5913B00960BD8 /* LauncherVC.swift in Sources */,
+				96D95A9929E6DA7700B8BFA1 /* ReflectionTest.m in Sources */,
 				9627536129D5347600692FD5 /* Account.m in Sources */,
 				9627535629D52A3600692FD5 /* main.m in Sources */,
 				9627536629D5514100692FD5 /* KVOExample.swift in Sources */,

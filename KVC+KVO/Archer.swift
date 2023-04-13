@@ -48,4 +48,14 @@ final class Archer: NSObject {
             }
         }
     }
+    
+    @objc func shoot(_ speed: Float) -> Bool {
+        if speed >= 100500 {
+            debugPrint("Too large speed to shoot by the archer = \(speed)")
+            return false
+        }
+        
+        debugPrint("Archer fired with arrow speed = \(speed)")
+        return true
+    }
 }

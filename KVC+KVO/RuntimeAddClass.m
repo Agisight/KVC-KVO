@@ -6,7 +6,6 @@
 //
 
 #import "MethodNames.h"
-#import "KVC_KVO-Swift.h"
 #import "RuntimeAddClass.h"
 #import <objc/runtime.h>
 
@@ -26,30 +25,6 @@
 
     // Завершаем создание класса
     objc_registerClassPair(newClass);
-    
-    
-    // Получаем класс NSString
-    Class stringClass = [Archer class];
-
-    // Получаем имя класса
-    const char *className1 = class_getName(stringClass);
-    NSLog(@"Имя класса: %s", className1);
-
-    // Получаем количество методов класса
-    unsigned int count;
-    Method *methods = class_copyMethodList(stringClass, &count);
-    NSLog(@"Количество методов: %u", count);
-
-    // Выводим информацию о каждом методе
-    for (unsigned int i = 0; i < count; i++) {
-        Method method = methods[i];
-        SEL selector = method_getName(method);
-        const char *methodName = sel_getName(selector);
-        NSLog(@"Метод: %s", methodName);
-    }
-
-    // Освобождаем память, выделенную под массив методов
-    free(methods);
     
     return newClass;
 }
